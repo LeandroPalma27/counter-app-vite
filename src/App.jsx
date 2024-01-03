@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { NoFragment } from "./components/NoFragment";
 import '../src/App.css'
+import { Home } from "./components/Home";
+import Home2 from "./components/Home2";
 
-
-ReactDOM.createRoot(document.getElementById("root")).render(
+const divRoot = document.getElementById("root");
+ReactDOM.createRoot(divRoot).render(
     <React.StrictMode>
-        <NoFragment/>
+        <Home title="Home1" name="Tati" age={23}/>
+        <Home2 title="Home2" age={20}/>
     </React.StrictMode>
 );
